@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(243, 239, 239);
+     display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+.L_header img{
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+.header{
+    /* width: 1340px; */
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid rgb(226, 219, 219);
+    padding: 10px;
+    background-color: white;
+}
+
+.L_header {
+    display: flex;
+}
+.L_header .search .material-icons{
+    color: black;
+    cursor: pointer;
+}
+.R_header{
+    display: flex;
+    
+    
+}
+.search{
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    /* padding-right: 10px; */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 15px;
+    color: whitesmoke;
+    background-color:rgb(236, 236, 236);
+}
+.search input{
+    padding-top: 10px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.options:hover{
+    color: black;
+}
+.options h4{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400px;
+}
+.material-icons{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.body_main{
+    display: flex;
+    margin-top: 20px;
+    max-width: 100%;
+   
+    margin-left: 80px;
+    margin-right: 80px;
+    /* padding-left: 80px;  */
+    /* padding-right: 50px; */
+
+}
+ .sidebar{
+    position: sticky;
+    top: 80px;
+    flex: 0.2;
+    border-radius: 10px;
+     
+    text-align:center; 
+    height: fit-content;
+}
+.sidebar_top  img{
+    margin-bottom: -20px; 
+    width: 100%; 
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+}
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.material-icons{
+    margin-top: 5px;
+    font-size: 30px;
+}
+.sidebar_stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sidebar_stat{
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_stat p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.sidebar_stat p:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.sidebar_statnumber  {
+    font-weight: bold;
+    color: rgb(57, 57, 250) !important;
+}
+.sidebar_top h4{
+    margin-top: 8px;
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+}
+.sidebar_top h5{
+    margin-top: -3px;
+    color: rgb(46, 45, 45);
+    font-size: 10px;
+}
+.sidebar_bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.sidebar_bottom p{
+    cursor: default;
+    font-weight: bold;
+    font-style: initial;
+}
+.sidebar_recentitem{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 2px;
+    padding: 3px;
+}
+.sidebar_recentitem:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    
+}
+.sidebar_hash{
+    margin: 0 5px;
+}
+.sidebar_bottom p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+/* feed */
+.feed{
+    flex: 0.6;
+    margin: 0 20px;
+}
+.feed_inputcontainer{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.feed_input{
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: gray;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+.feed_input .material-icons{
+    padding-right: 5px;
+    padding-top: -5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.feed_input form{
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.feed_input form input{
+    border: none;
+    flex: 1;
+    outline-width: 0;
+    margin-left: 10px;
+}
+.feed_inputoption{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inputoption{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 3px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+.inputoption .material-icons{
+    font-size: 25px;
+}
+.inputoption:hover{
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+}
+.inputoption h4{
+    margin-left: 5px;
+    margin-top: 15px;
+}
+/* post styling */
+.post{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 206, 206);
+}
+.post_header{
+    display: flex;
+    margin-bottom: 15px;
+    color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+.post_input{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.post_input p{
+    font-size: 12px;
+    color: gray;
+}
+.post_input h2{
+    font-size: 20px;
+   
+}
+/* widgets */
+.widgets{
+    position: sticky;
+    top: 80px;
+    flex: 0.2;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    padding-bottom: 10px;
+    /* padding-right: 100px; */
+}
+.widget_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.widget_header h2{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: default;
+}
+.widget_header .material-icons{
+    font-size: 20px;
+    cursor: pointer;
+    color:  rgb(69, 71, 71);
+}
+.widget_artical{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.widget_artical:hover{
+    background-color: rgb(236, 236, 236);
+}
+.widget_artical_left{
+        color: rgb(67, 181, 226);
+        margin-right: 5px;
+}
+.widget_artical_left .material-icons{
+    font-size: 20px;
+}
+.widget_artical_right
+{
+    flex: 1;
+
+}
+.widget_artical_right h4{
+    font-size: 18px;
+}
+.widget_artical_right h5{
+    font-size: 15px;
+}
+.widget_artical_right p{
+   font-size: 13px;
+    color: gray;
+}
+    
+ 
